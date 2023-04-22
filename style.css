@@ -206,6 +206,12 @@ footer a{
         display: none;
     }
 
+    header{
+        width: 100vw;
+        overflow-x:hidden;
+        position: relative;
+    }
+
     .btns{
         position: absolute;
         display: block;
@@ -213,6 +219,7 @@ footer a{
         padding-left: 2rem;
         top: 15rem;
         left: 50rem;
+        z-index: 10;
     }
 
     .btns *{
@@ -240,12 +247,12 @@ footer a{
         height: 100vh;
         background-color: var(--Almost-White);
         padding: 3rem 0 0 1rem;
+        z-index: 10;
     }
 
     .show{
         animation-name: menu;
         animation-duration: 2s;
-        left: 6rem;
     }
 
     .hide{

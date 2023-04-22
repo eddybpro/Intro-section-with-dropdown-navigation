@@ -1,4 +1,5 @@
-const links = document.querySelector('.links'),
+const header = document.querySelector('header');
+links = document.querySelector('.links'),
 subNavLinks = document.querySelectorAll('.box li'),
 career = document.querySelector('.career'),
 about = document.querySelector('.about'),
@@ -23,6 +24,7 @@ menuBtn.addEventListener('click', ()=>{
     links.style.left = '6rem';
     btnsBox.classList.toggle('show');
     btnsBox.style.left = '6rem';
+    header.style.overflowX = 'visible';
 })
 
 function closeMenu(){
@@ -32,6 +34,7 @@ function closeMenu(){
     links.style.left='50rem';
     btnsBox.classList.toggle('hide');
     btnsBox.style.left = '50rem';
+    header.style.overflowX = 'hidden';
 
     setTimeout(()=>{
         links.classList.remove('hide');
@@ -93,29 +96,3 @@ company.addEventListener('click', ()=>{
         companyFlag = true;
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
